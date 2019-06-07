@@ -18,28 +18,28 @@ using System.Speech.Synthesis;
 using System.Speech.Recognition;
 using System.Diagnostics;
 using System.IO;
-using Vision_Core;
+using Vision.Core;
 
 namespace MARK
 {
     public partial class MainUI : Form
     {
 
-        Vision_Core.Main MK_MAIN = new Vision_Core.Main();
-        Vision_Core.IOFile MK_IO = new Vision_Core.IOFile();
-        Vision_Core.Update MK_UPDATE = new Vision_Core.Update();
+        Vision.Core.Main MK_MAIN = new Vision.Core.Main();
 
         /////////////////////////////////          Variable Declarions                 /////////////////////////////////////
-        /* PROGRAM VARIABLES */
-              String PROGRAM_NAME = "Vision"; String PROGARM_VERSION = "Preview  Version 2.8";
-             /* PROGRAM VARIABLES */
-        int mouseX = 0; int mouseY = 0; bool mouseDown; string line = ""; string error;//Main Variables
+        /*                               PROGRAM VARIABLES                                 */
+        String PROGRAM_NAME = "Vision"; String PROGARM_VERSION = "Vision  Version 1.0";
+        /*                               PROGRAM VARIABLES                                 */
+        int WAIT = 0;
+        private bool drag = false; private Point startPoint = new Point(0, 0); string line = ""; string error;//Main Variables
         int Tsecond = 00, Tminute = 00, Thour = 00; string StrWTime = "00:00", TxSecond = "00", TxMinute = "00", Txhour = "00";//For Working Time Count
-        string mkvol; string user = "Sir"; int volume; string speak; string userdatafile = "User.vidb";//Settings up User Info
+        string mkvol; string user = "Sir"; int Vision_MKVolume; string speak; string userdatafile = "User.vidb";//Settings up User Info
         string command; string iscommand; Boolean iscmd;//For Commad Mode
-        // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
-        Choices list = new Choices();
+                                                        // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
+        Choices list = new Choices();
+        public SpeechSynthesizer s = new SpeechSynthesizer();
         public MainUI()
         {
             SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
@@ -50,51 +50,56 @@ namespace MARK
             {
                 rec.RequestRecognizerUpdate();
                 rec.LoadGrammar(gr);
-                rec.SpeechRecognized += MK_MAIN.rec_SpeechRecognized;
+                rec.SpeechRecognized += rec_SpeechRecognized;
                 rec.SetInputToDefaultAudioDevice();
                 rec.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch { return; }
-            MK_MAIN.s.SelectVoiceByHints(VoiceGender.Male);
+            s.SelectVoiceByHints(VoiceGender.Male);
             InitializeComponent();
         }
-
-        private void title_MouseDown(object sender, MouseEventArgs e) { mouseDown = true; }
-        private void title_MouseMove(object sender, MouseEventArgs e) { if (mouseDown) { mouseX = MousePosition.X - 200; mouseY = MousePosition.Y - 40; this.SetDesktopLocation(mouseX, mouseY); } }
-        private void title_MouseUp(object sender, MouseEventArgs e) { mouseDown = false; }
-        private void clsbtn_Click(object sender, EventArgs e) { exit(); }
-        private void clsbtn_MouseMove(object sender, MouseEventArgs e) { clsbtn.BackColor = Color.FromArgb(254, 49, 44); clsbtn.ForeColor = Color.White; }
-        private void clsbtn_MouseLeave(object sender, EventArgs e) { clsbtn.BackColor = Color.FromArgb(20,20,20); clsbtn.ForeColor = Color.Gainsboro; }
-        private void license_Click(object sender, EventArgs e) { showdat(); }
-        private void searchbtn_Click(object sender, EventArgs e) { search(); }
+        //**************************************    EVENTS.MAINUI    **********************************************//
+        private void title_MouseDown(object sender, MouseEventArgs e) { this.startPoint = e.Location; this.drag = true; }
+        private void title_MouseMove(object sender, MouseEventArgs e) {if (this.drag){ Point p1 = new Point(e.X, e.Y); Point p2 = this.PointToScreen(p1); Point p3 = new Point(p2.X - this.startPoint.X,p2.Y - this.startPoint.Y);this.Location = p3;}}
+        private void title_MouseUp(object sender, MouseEventArgs e) { this.drag = false; }
+        private void clsbtn_Click(object sender, EventArgs e) { Exit(); }
+        private void clsbtn_MouseMove(object sender, MouseEventArgs e) { clsbtn.BackColor = Color.Red; clsbtn.ForeColor = Color.White; }
+        private void clsbtn_MouseLeave(object sender, EventArgs e) { clsbtn.BackColor = Color.FromArgb(14, 102, 209); clsbtn.ForeColor = Color.WhiteSmoke; }
+        private void license_Click(object sender, EventArgs e) { ShowCredits(); }
+        private void searchbtn_Click(object sender, EventArgs e) { Search(); }
         private void inputTextBox1_Click1(object sender, EventArgs e) { inputTextBox1.Text = ""; }
+        private void Button1_Click(object sender, EventArgs e) { About About = new About(); About.Show(); }
         private void tableBindingNavigatorSaveItem_Click(object sender, EventArgs e) { this.Validate(); this.tableBindingSource.EndEdit(); this.tableAdapterManager.UpdateAll(this.databaseDataSet); }
+        private void MainUI_FormClosing(object sender, FormClosingEventArgs e) { WRITEOUT("22898225451643846458545757237772346234671265342558224564543263"); }
+        private void InputTextBox1_Enter(object sender, EventArgs e) { TextLine.BackColor = Color.FromArgb(23, 124, 185); }
+        private void InputTextBox1_Leave(object sender, EventArgs e) { TextLine.BackColor = Color.FromArgb(64, 64, 64); }
+        private void OutputTextBox1_Enter(object sender, EventArgs e) { OutLine.BackColor = Color.FromArgb(23, 124, 185); }
+        private void OutputTextBox1_Leave(object sender, EventArgs e) { OutLine.BackColor = Color.FromArgb(64,64,64); }
+        
         //************************************************************************************************************************       
         /*                                              *  User Interface Load  *                                                          */
         private void MainUI_Load(object sender, EventArgs e)
         {
-            checkprpro();
-            show_mainui.Enabled = true;
-            mark_start();
-            this.tableTableAdapter.Fill(this.databaseDataSet.Table);
+            VerifyProtection();            
         }
 
         //************************************************************************************************************************       
         /*                                              *  Main Functions  *                                                          */
-        public void print(String str) { outputTextBox1.Text = str; MK_MAIN.say(str); }
-        public void hide() { MK_MAIN.say("Window minimized."); this.WindowState = FormWindowState.Minimized; }
-        public void gettime() { String time = DateTime.Now.ToLongTimeString(); outputTextBox1.Text = outputTextBox1.Text + ">>>" + time + "\n"; }
-        public void getdate() { String date = DateTime.Today.ToShortDateString(); outputTextBox1.Text = outputTextBox1.Text + ">>>" + date + "\n"; }
-        public void showdat() { details.Text = ""; details.Text += "*****   "+ PROGRAM_NAME + " [2019. 02]   *****\n"; details.Text += "\n";
+        public void Print(String str) { outputTextBox1.Text = str; Say(str); }
+        public void Hide() { Say("Window minimized."); this.WindowState = FormWindowState.Minimized; }
+        public void GetTime() { String time = DateTime.Now.ToLongTimeString(); outputTextBox1.Text = outputTextBox1.Text + ">>>" + time + "\n"; }
+        public void GetDate() { String date = DateTime.Today.ToShortDateString(); outputTextBox1.Text = outputTextBox1.Text + ">>>" + date + "\n"; }
+        public void ShowCredits() { details.Text = ""; details.Text += "*****   "+ PROGRAM_NAME + " [2019. 03]   *****\n"; details.Text += "\n";
             details.Text += "Programmer :  Dewnith Fernando.\n"; details.Text += "UI Designer :  Dewnith Fernando.\n";
-            details.Text += "\n"; details.Text += "Version :  '"+ PROGRAM_NAME + " Preview' v2.8.4078 [2019.02]\n";
-            details.Text += "\n"; details.Text += "Copyright © 2019, Dewnith Fernando and/or its affiliates. ";
+            details.Text += "\n"; details.Text += "Version :  'Vision' v1.0.1048 [2019.03.24]\n";
+            details.Text += "\n"; details.Text += "Copyright © 2019, M.P.Dewnith Fernando and/or its affiliates. ";
             details.Text += "All rights reserved."; }
-        public void exit() { outputTextBox1.Text = "Good Bye " + user + ".\n" + " "+ PROGRAM_NAME + " is shutting down.....\n"; MK_MAIN.say("Good bye " + user +". "+ PROGRAM_NAME +" is shutting down."); MK_MAIN.getudata("22898225255643845454545754237372346234645265342558424524543263"); this.Close(); }
-        public void checkcwt() { line = File.ReadLines(userdatafile).Skip(1).Take(1).First(); if (line == "1100") { timer1.Enabled = true; udtime.Visible = true; } else { udtime.Visible = false; } }
-        public void getuserinfo() { mkvol = File.ReadLines(userdatafile).Skip(3).Take(1).First(); user = File.ReadLines(userdatafile).Skip(4).Take(1).First(); speak = File.ReadLines(userdatafile).Skip(2).Take(1).First(); }
-        public void setvol() { if (mkvol == "0100") { volume = 100; } else if (mkvol == "1000") { volume = 75; } else if (mkvol == "0010") { volume = 50; } else if (mkvol == "0001") { volume = 25; } else if (speak == "0010") { volume = 0; } }
-
+        public void Exit() { ShowCredits(); outputTextBox1.Text = "Good Bye " + user + "\n";inputtext.Text = ""; outputTextBox1.Text = PROGRAM_NAME + " is shutting down....."; Say("Good bye " + user +". "+ PROGRAM_NAME +" is shutting down."); WRITEOUT("22898225255643845454545754237372346234645265342558424524543263"); Application.Exit(); }
+        public void CheckCWT() { line = File.ReadLines(userdatafile).Skip(1).Take(1).First(); if (line == "1100") { timer1.Enabled = true; udtime.Visible = true; } else { udtime.Visible = false; } }
+        public void GetUserInfo() { mkvol = File.ReadLines(userdatafile).Skip(3).Take(1).First(); user = File.ReadLines(userdatafile).Skip(4).Take(1).First(); speak = File.ReadLines(userdatafile).Skip(2).Take(1).First(); }
+        public void SetMKVolume() { if (mkvol == "0100") { Vision_MKVolume = 100; } else if (mkvol == "1000") { Vision_MKVolume = 75; } else if (mkvol == "0010") { Vision_MKVolume = 50; } else if (mkvol == "0001") { Vision_MKVolume = 25; } else if (speak == "0010") { Vision_MKVolume = 0; } s.Volume = Vision_MKVolume; s.Volume = Vision_MKVolume; }
+        public void Say(String h) { s.Speak(h); }
+        public void Run(String app) { Process.Start(app); }
 
         //************************************************************************************************************************
 
@@ -122,78 +127,115 @@ namespace MARK
             if (pref_done == "10011001043555535555552212")
             {
                 timer2.Enabled = false;
-                mark_start();
-                print(PROGRAM_NAME + " System has been updated!");
+                GetUserInfo();
+                SetMKVolume();
+                s.Volume = Vision_MKVolume;
+                CheckCWT();
+                version.Text = PROGARM_VERSION;
+                ShowCredits();
+                Say("User data has been updated!");
+                outputTextBox1.Text += "User data has been updated on: " + DateTime.Now.ToLongTimeString();
                 MessageBox.Show("User data has been updated!", "Updated");
             }
         }
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        public void mark_start()
+        public void Mark_Start()
         {
-            getuserinfo();
-            setvol();
-            MK_MAIN.s.Volume = volume;
-            MK_MAIN.say("Hi, i am  " + PROGRAM_NAME);
-            checkcwt();
-            print("Have a nice day " + user);
+            GetUserInfo();
+            SetMKVolume();
+            Say("Hi, i am  " + PROGRAM_NAME);
+            CheckCWT();
+            Say("Have a nice day " + user);
+            outputTextBox1.Text = "Have a nice day " + user + ".\n";
             version.Text = PROGARM_VERSION;
-            showdat();
+            //ShowCredits();
         }
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         /*                                           Check programm protection                                                                  */
-        public void checkprpro()
+        public void VerifyProtection()
         {
             try
             {
-                line = File.ReadLines(userdatafile).Skip(0).Take(1).First();
-                if (line == "22898225255648845454545456237372346234645265342553424524543253") { outputTextBox1.Text += "/n" + "Program Protection test Successful!"; }
+               line = File.ReadLines(userdatafile).Skip(0).Take(1).First();
+               if (line == "22898225255648845454545456237372346234645265342553424524543253")
+                {
+                    show_mainui.Enabled = true;
+                    Mark_Start();
+                    outputTextBox1.Text += "\n" + "Program Protection test Successful!\n\n";
+                    try
+                    {
+                        this.tableTableAdapter.Fill(this.databaseDataSet.Table);
+                    }
+                    catch (Exception ex)
+                    {
+                        tableBindingNavigator.Visible = false;
+                        MessageBox.Show("Can't login Database.'Database.mdf' file not found or 'SQL Server' is not installed in your system.Please install 'SQL Server 2014 Express or newever' for run this program.", "Database Login Error");
+                        details.Text += "ERROR:Vision couldn't login his database file[Database.mdf].It's a very important file for " + PROGRAM_NAME + ".\n";
+                        details.Text += "'Database.mdf' file not found or SQL Server is not installed on your computer.\n";
+                        details.Text += "Please install 'SQL Server Express 2014' or newever on your computer.\n";
+                        details.Text += "Actually you can report any issue to 'dvnetsoft@gmail.com'.\n";
+                    }
+                }
                 else
                 {
                     MessageBox.Show("Program protection found a error: you run this program without using "+PROGRAM_NAME+" Launcher...Please run again this program using launcher.", "Program Protection Error"); this.Close();
                 }
             }
-            catch (Exception IOError)
+            catch (Exception ex)
             {
                 MessageBox.Show("Couldn't found 'User.vidb' file.Please re'install this program and fix.", "ERROR : Couldn't found 'User Data'");this.Close();
             }
         }
-
-        private void MainUI_FormClosing(object sender, FormClosingEventArgs e){ MK_MAIN.getudata("22898225451643846458545757237772346234671265342558224564543263"); }
-
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         /*                                          RunCommand [commands runner]                                                                 */
         public void RunCommand()
         {
             if (iscmd == true)
             {
-                switch (iscommand) {
-                    case "RUN": try { MK_MAIN.run(command); } catch (Exception IOError) { print(command + " executable not found in your computer."); } break;
-                    case "GOOD": if (command == "BYE") { exit(); } break;
-                    case "PLAY": if (command == "WARCRAFT") { try { Warcraft3.Start(); exit(); } catch (Exception IOError) { MessageBox.Show("Warcraft III.exe is not found."); } } break;
-                    case "UPDATE": if (command == "THIS") { MK_UPDATE.UPDATE(); print(MK_UPDATE.UPDATE()); } break;
+                switch (iscommand)
+                {
+                    case "RUN": try { Run(command); } catch (Exception IOError) { Print(command + " executable not found in your computer."); } break;
+                    case "GOOD": if (command == "BYE") { Exit(); } break;
+                    case "PLAY": if (command == "WARCRAFT") { try { Warcraft3.Start(); Exit(); } catch (Exception IOError) { MessageBox.Show("Warcraft III.exe is not found."); } } break;
+                    case "UPDATE": if (command == "THIS") { } break;
+                    case "OPEN": if (command == "JK") { MrJK.Start(); } break;
+                }
+
+                switch (command)
+                {
+                    case "SETTINGS": { Run("vin_pref.exe"); timer2.Enabled = true; } break;
                 }
             }
-            else { search(); }
+            else { Search(); }
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         /*                                         Get Outputs from main.Dll / Database.mdf                                         */
-        private void search()
+        private void Search()
         {
-            string uin = inputTextBox1.Text; 
+            string uin = inputTextBox1.Text;
             inputTextBox1.Text = ""; inputtext.Text = uin;
 
-            if (uin == "info") { inputTextBox1.Text = ""; showdat(); }
-            else if (uin == "show time") { outputTextBox1.Text = ""; inputtext.Text = "Now Time"; gettime(); }
-            else if (uin == "show date") { outputTextBox1.Text = ""; inputtext.Text = "Date"; getdate(); }
-            else if (uin == "settings") { hide(); MK_MAIN.run("mark_pref.exe"); timer2.Enabled = true; }
-            else if (uin == "hide") { outputTextBox1.Text = "Window minimized"; inputTextBox1.Text = ""; hide(); print(outputTextBox1.Text); }
-            else { print(MK_IO.Answer(uin)); }
-            try { tableBindingSource.Filter = "input LIKE '" + uin + "%'"; print(outputTextBox1.Text); }
-            catch (Exception ex) { outputTextBox1.Text = uin + "is not found in my database.However you can include about " + uin + " in my Database."; print(outputTextBox1.Text);}
+            if (uin == "info") { inputTextBox1.Text = ""; ShowCredits(); }
+            else if (uin == "show time") { outputTextBox1.Text = ""; inputtext.Text = "Now Time"; GetTime(); }
+            else if (uin == "show date") { outputTextBox1.Text = ""; inputtext.Text = "Date"; GetDate(); }
+            else if (uin == "about") { About About = new About(); About.ShowDialog(); }
+            else if (uin == "hide") { outputTextBox1.Text = "Window minimized"; inputTextBox1.Text = ""; Hide(); Print(outputTextBox1.Text); }
+            else { Print(MK_MAIN.Answer(uin)); }
+            try { tableBindingSource.Filter = "input LIKE '" + uin + "%'"; Print(outputTextBox1.Text); }
+            catch (Exception ex) { outputTextBox1.Text = uin + "is not found in my database.However you can include about " + uin + " in my Database."; Print(outputTextBox1.Text);}
         }
+
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        private void inputTextBox1_TextChanged(object sender, EventArgs e)
+        private void inputTextBox1_TextChanged(object sender, EventArgs e) {   }
+        public void WRITEOUT(string gtudat)
         {
+            string clock = File.ReadLines(userdatafile).Skip(1).Take(1).First();
+            string speak = File.ReadLines(userdatafile).Skip(2).Take(1).First();
+            string vol = File.ReadLines(userdatafile).Skip(3).Take(1).First();
+            string name = File.ReadLines(userdatafile).Skip(4).Take(1).First();
+
+            string[] lines = { gtudat, clock, speak, vol, name };
+            System.IO.File.WriteAllLines(@userdatafile, lines);
         }
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         private void show_mainui_Tick(object sender, EventArgs e)
@@ -239,6 +281,17 @@ namespace MARK
                 case Keys.Space: iscommand = command; command = ""; break;
                 case Keys.Enter: RunCommand(); command = ""; break;
             }
+        }
+        public void rec_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            String r = e.Result.Text;
+            if (r == "Hello") { Say("Hi  your  welcome"); }
+            else if (r == "hi") { Say("hi"); }
+            else if (r == "Good") { Say("Thanks for you"); }
+            //else if (r == "open chrome") { run("chrome"); print("Now opening google chrome"); hide(); }
+            else if (r == "viper") { Say("why"); }
+            else if (r == "thank you") { Say("welcome"); }
+            else if (r == "open") { Say("what you want to open."); }
         }
     }
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
