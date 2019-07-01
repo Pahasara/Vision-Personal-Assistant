@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>MARK</RootNamespace>
     <AssemblyName>Vision_UI</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -113,14 +113,14 @@
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Vision.Core">
-      <HintPath>..\Core Library\bin\Release\Vision.Core.dll</HintPath>
+      <HintPath>..\..\Core Engine\bin\Release\Vision.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="About.Designer.cs">
+    <Compile Include="About.designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseDataSet.Designer.cs">

@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainUI));
             this.title = new System.Windows.Forms.Label();
-            this.clsbtn = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.version = new System.Windows.Forms.Label();
             this.copyright = new System.Windows.Forms.Label();
@@ -68,6 +67,7 @@
             this.tableTableAdapter = new MARK.DatabaseDataSetTableAdapters.TableTableAdapter();
             this.tableAdapterManager = new MARK.DatabaseDataSetTableAdapters.TableAdapterManager();
             this.OutLine = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingNavigator)).BeginInit();
@@ -85,27 +85,11 @@
             this.title.Name = "title";
             this.title.Size = new System.Drawing.Size(910, 30);
             this.title.TabIndex = 1;
-            this.title.Text = "Private Assistant VISION 2019";
+            this.title.Text = "Private Assistant Vision DARK";
             this.title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.title.MouseDown += new System.Windows.Forms.MouseEventHandler(this.title_MouseDown);
             this.title.MouseMove += new System.Windows.Forms.MouseEventHandler(this.title_MouseMove);
             this.title.MouseUp += new System.Windows.Forms.MouseEventHandler(this.title_MouseUp);
-            // 
-            // clsbtn
-            // 
-            this.clsbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(102)))), ((int)(((byte)(209)))));
-            this.clsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clsbtn.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clsbtn.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.clsbtn.Location = new System.Drawing.Point(875, -3);
-            this.clsbtn.Name = "clsbtn";
-            this.clsbtn.Size = new System.Drawing.Size(35, 33);
-            this.clsbtn.TabIndex = 2;
-            this.clsbtn.Text = "x";
-            this.clsbtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.clsbtn.Click += new System.EventHandler(this.clsbtn_Click);
-            this.clsbtn.MouseLeave += new System.EventHandler(this.clsbtn_MouseLeave);
-            this.clsbtn.MouseMove += new System.Windows.Forms.MouseEventHandler(this.clsbtn_MouseMove);
             // 
             // label3
             // 
@@ -121,24 +105,24 @@
             // version
             // 
             this.version.AutoSize = true;
-            this.version.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.version.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(185)))));
-            this.version.Location = new System.Drawing.Point(57, 487);
+            this.version.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.version.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(124)))), ((int)(((byte)(190)))));
+            this.version.Location = new System.Drawing.Point(50, 500);
             this.version.Name = "version";
-            this.version.Size = new System.Drawing.Size(117, 15);
+            this.version.Size = new System.Drawing.Size(74, 16);
             this.version.TabIndex = 5;
-            this.version.Text = "Preview  Version 0.1";
+            this.version.Text = "Version 0.1";
             // 
             // copyright
             // 
             this.copyright.AutoSize = true;
-            this.copyright.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.copyright.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(124)))), ((int)(((byte)(186)))));
-            this.copyright.Location = new System.Drawing.Point(214, 487);
+            this.copyright.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.copyright.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(124)))), ((int)(((byte)(190)))));
+            this.copyright.Location = new System.Drawing.Point(228, 499);
             this.copyright.Name = "copyright";
-            this.copyright.Size = new System.Drawing.Size(313, 15);
+            this.copyright.Size = new System.Drawing.Size(306, 16);
             this.copyright.TabIndex = 6;
-            this.copyright.Text = "Copyright ©  2019 Dewnith Fernando. All rights reserved.";
+            this.copyright.Text = "Copyright ©  Dewnith Fernando. All rights reserved.";
             // 
             // label7
             // 
@@ -146,7 +130,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(94)))), ((int)(((byte)(165)))));
-            this.label7.Location = new System.Drawing.Point(-9, 470);
+            this.label7.Location = new System.Drawing.Point(-9, 481);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(945, 15);
             this.label7.TabIndex = 8;
@@ -156,13 +140,13 @@
             // build
             // 
             this.build.AutoSize = true;
-            this.build.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.build.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(185)))));
-            this.build.Location = new System.Drawing.Point(627, 487);
+            this.build.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.build.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(124)))), ((int)(((byte)(190)))));
+            this.build.Location = new System.Drawing.Point(635, 500);
             this.build.Name = "build";
-            this.build.Size = new System.Drawing.Size(66, 15);
+            this.build.Size = new System.Drawing.Size(69, 16);
             this.build.TabIndex = 9;
-            this.build.Text = "Build 1048";
+            this.build.Text = "Build 1024";
             // 
             // details
             // 
@@ -197,11 +181,11 @@
             // 
             this.udtime.AutoSize = true;
             this.udtime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.udtime.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.udtime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.udtime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(160)))), ((int)(((byte)(210)))));
             this.udtime.Location = new System.Drawing.Point(750, 242);
             this.udtime.Name = "udtime";
-            this.udtime.Size = new System.Drawing.Size(88, 16);
+            this.udtime.Size = new System.Drawing.Size(68, 16);
             this.udtime.TabIndex = 17;
             this.udtime.Text = "00 : 00 : 00";
             this.udtime.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -385,7 +369,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(94)))), ((int)(((byte)(165)))));
-            this.label1.Location = new System.Drawing.Point(189, 485);
+            this.label1.Location = new System.Drawing.Point(193, 496);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(14, 20);
             this.label1.TabIndex = 25;
@@ -396,7 +380,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(94)))), ((int)(((byte)(165)))));
-            this.label2.Location = new System.Drawing.Point(726, 485);
+            this.label2.Location = new System.Drawing.Point(739, 496);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(14, 20);
             this.label2.TabIndex = 26;
@@ -407,7 +391,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(94)))), ((int)(((byte)(165)))));
-            this.label4.Location = new System.Drawing.Point(562, 485);
+            this.label4.Location = new System.Drawing.Point(588, 496);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(14, 20);
             this.label4.TabIndex = 27;
@@ -419,11 +403,11 @@
             this.Licence_btn.FlatAppearance.BorderSize = 0;
             this.Licence_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Licence_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Licence_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Licence_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(124)))), ((int)(((byte)(185)))));
-            this.Licence_btn.Location = new System.Drawing.Point(773, 484);
+            this.Licence_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Licence_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(124)))), ((int)(((byte)(190)))));
+            this.Licence_btn.Location = new System.Drawing.Point(785, 495);
             this.Licence_btn.Name = "Licence_btn";
-            this.Licence_btn.Size = new System.Drawing.Size(66, 22);
+            this.Licence_btn.Size = new System.Drawing.Size(75, 22);
             this.Licence_btn.TabIndex = 28;
             this.Licence_btn.Text = "About us";
             this.Licence_btn.UseVisualStyleBackColor = false;
@@ -479,12 +463,30 @@
             this.OutLine.TabIndex = 30;
             this.OutLine.Text = "label5";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(102)))), ((int)(((byte)(209)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(872, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(38, 30);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
+            // 
             // MainUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
-            this.ClientSize = new System.Drawing.Size(910, 509);
+            this.ClientSize = new System.Drawing.Size(910, 520);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -498,7 +500,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.copyright);
             this.Controls.Add(this.version);
-            this.Controls.Add(this.clsbtn);
             this.Controls.Add(this.title);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.details);
@@ -513,7 +514,7 @@
             this.Name = "MainUI";
             this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Vision";
+            this.Text = "DvNET Vision Dark";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainUI_FormClosing);
             this.Load += new System.EventHandler(this.MainUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
@@ -529,7 +530,6 @@
 
         #endregion
         private System.Windows.Forms.Label title;
-        private System.Windows.Forms.Label clsbtn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label version;
         private System.Windows.Forms.Label copyright;
@@ -567,6 +567,7 @@
         private System.Windows.Forms.Timer Wait;
         private System.Windows.Forms.Label TextLine;
         private System.Windows.Forms.Label OutLine;
+        private System.Windows.Forms.Button button1;
     }
 }
 
