@@ -3,10 +3,10 @@
   <assemblyIdentity name="Vision_UI.application" version="2.8.4078.1" publicKeyToken="0000000000000000" language="en" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <description asmv2:publisher="Dewnith Fernando" asmv2:product="MARK" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" co.v1:createDesktopShortcut="true">
-    <deploymentProvider codebase="http://pahasara-pc/Mark_UI/Updates/Vision_UI.application" />
+    <deploymentProvider codebase="http://desktop-dvnet/Mark_UI/Updates/Vision_UI.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
     <dependentAssembly dependencyType="install" codebase="Vision_UI.exe.manifest" size="7060">
@@ -16,7 +16,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>OT0a4IB5j60ay97pwm+dhqd8xO3S/UxyRP2VdSAWw6M=</dsig:DigestValue>
+        <dsig:DigestValue>ytiPm2SZoiOkPohtyEnOIYx/9vHgDie5oSxSaSS1piQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
