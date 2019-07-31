@@ -95,12 +95,12 @@
             // 
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(94)))), ((int)(((byte)(165)))));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(154)))), ((int)(((byte)(190)))));
             this.label10.Location = new System.Drawing.Point(28, 8);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(390, 21);
             this.label10.TabIndex = 13;
-            this.label10.Text = "Private Assistant Vision Dark Edition";
+            this.label10.Text = "Private Assistant Vision Extreme Edition";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label11
@@ -120,11 +120,11 @@
             this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
-            this.label15.Location = new System.Drawing.Point(44, 330);
+            this.label15.Location = new System.Drawing.Point(42, 330);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(351, 16);
+            this.label15.Size = new System.Drawing.Size(370, 19);
             this.label15.TabIndex = 18;
-            this.label15.Text = "* Copyright © 2019 Dewnith Fernando. All rights reserved.";
+            this.label15.Text = "* Copyright © 2018 - 2019 Dewnith Fernando. All rights reserved.";
             this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1
@@ -313,6 +313,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "About";
             this.Deactivate += new System.EventHandler(this.About_Deactivate);
+            this.Load += new System.EventHandler(this.About_Load);
             this.Leave += new System.EventHandler(this.About_Leave);
             this.ResumeLayout(false);
             this.PerformLayout();

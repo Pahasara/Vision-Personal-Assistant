@@ -7,11 +7,13 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Windows.Forms;
+using Vision.Core;
 
 namespace MARK
 {
     partial class About : Form
     {
+        Vision.Core.Main MK_MAIN = new Vision.Core.Main();
         public About()
         {
             InitializeComponent();
@@ -41,6 +43,11 @@ namespace MARK
         private void Label19_Click(object sender, EventArgs e)
         {
             Process.Start(@"https://www.github.com/Pahasara");
+        }
+
+        private void About_Load(object sender, EventArgs e)
+        {
+            label15.Text = "Copyright © " + "2018 - " + MK_MAIN.getYear() + " Dewnith Fernando. All rights reserved.";
         }
     }
 }
