@@ -124,7 +124,11 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(370, 19);
             this.label15.TabIndex = 18;
+<<<<<<< HEAD
             this.label15.Text = "* Copyright © 2018 - 2019 Dewnith Fernando. All rights reserved.";
+=======
+            this.label15.Text = "* Copyrights © 2018 - 2019 Dewnith Fernando. All rights reserved.";
+>>>>>>> 9708d9e426d13b89771fcdde0db830cf04a74a4d
             this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1
