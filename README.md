@@ -3,7 +3,7 @@ A Personal Assistant
 
 
 ********************************* Requriements ********************************
-* ".NET Framework 4.5.2 Runtime" is need to run this application.
+* ".NET Framework 4.7.2 Runtime" is need to run this application.
  You can download it from "https://go.microsoft.com/fwlink/?LinkId=397708"
  
 * "SQL Express LocalDB" is necessary requirement for Vision.
