@@ -4,7 +4,11 @@
   <description asmv2:iconFile="app.ico" asmv2:publisher="Dewnith Fernando" asmv2:product="MARK" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
+<<<<<<< HEAD
     <assemblyIdentity name="Vision_UI" version="2.0.1218.0" language="neutral" processorArchitecture="msil" />
+=======
+    <assemblyIdentity name="Vision_UI" version="1.2.731.0" language="neutral" processorArchitecture="msil" />
+>>>>>>> 710ed28d91dd6f2bae8186008a9e446b1f8e94e8
     <commandLine file="Vision_UI.exe" parameters="" />
   </entryPoint>
   <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
@@ -44,26 +48,44 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+<<<<<<< HEAD
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vision.Core.dll" size="7168">
       <assemblyIdentity name="Vision.Core" version="2.0.1218.0" language="neutral" processorArchitecture="msil" />
+=======
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vision.Core.dll" size="6656">
+      <assemblyIdentity name="Vision.Core" version="1.2.731.0" language="neutral" processorArchitecture="msil" />
+>>>>>>> 710ed28d91dd6f2bae8186008a9e446b1f8e94e8
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< HEAD
         <dsig:DigestValue>VExZjAZ9ODG8IGt6wMK2m4pBjX0HGZvyS+w+0UbCfkU=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>4SVNsOwuTLdWRm2HA2N9pOjPDHLFLFaVUmjf/v8lN3w=</dsig:DigestValue>
+>>>>>>> 710ed28d91dd6f2bae8186008a9e446b1f8e94e8
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
+<<<<<<< HEAD
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vision_UI.exe" size="514008">
       <assemblyIdentity name="Vision_UI" version="2.0.1218.0" language="neutral" processorArchitecture="msil" />
+=======
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vision_UI.exe" size="487384">
+      <assemblyIdentity name="Vision_UI" version="1.2.731.0" language="neutral" processorArchitecture="msil" />
+>>>>>>> 710ed28d91dd6f2bae8186008a9e446b1f8e94e8
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< HEAD
         <dsig:DigestValue>jec7qg5kBr27PVgap59r08IAr87/5N1I+oFIS7UqQIc=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>6dlkmHQt2wv9cqGrlfInI5AoegZ9LjxkGRJeIpfyYKU=</dsig:DigestValue>
+>>>>>>> 710ed28d91dd6f2bae8186008a9e446b1f8e94e8
       </hash>
     </dependentAssembly>
   </dependency>
@@ -109,7 +131,11 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< HEAD
       <dsig:DigestValue>aGKyVzYln3v9NE5D7qEKcDiFvjge7ip0XOsSkWsBoVg=</dsig:DigestValue>
+=======
+      <dsig:DigestValue>399ezWKRyw10uJdGtzO8ix9udPAKJT3uFdFIkaLPW6A=</dsig:DigestValue>
+>>>>>>> 710ed28d91dd6f2bae8186008a9e446b1f8e94e8
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

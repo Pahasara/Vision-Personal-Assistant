@@ -6,6 +6,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
+<<<<<<< HEAD
 [assembly: AssemblyTitle("DvNET Vision")]
 [assembly: AssemblyDescription("Vision User Interface")]
 [assembly: AssemblyConfiguration("")]
@@ -13,6 +14,15 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("DvNET Vision")]
 [assembly: AssemblyCopyright("© M.P.Dewnith Fernando. All rights reserved.")]
 [assembly: AssemblyTrademark("DvNET Vision (TM)")]
+=======
+[assembly: AssemblyTitle("DvNET Vision Extreme")]
+[assembly: AssemblyDescription("Vision Extreme  User Interface")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("Dewnith Fernando")]
+[assembly: AssemblyProduct("DvNET P.A. Vision")]
+[assembly: AssemblyCopyright("© M.P.Dewnith Fernando. All rights reserved.")]
+[assembly: AssemblyTrademark("DvNET P.A. Vision(TM)")]
+>>>>>>> 710ed28d91dd6f2bae8186008a9e446b1f8e94e8
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -33,7 +43,12 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
+<<<<<<< HEAD
 [assembly: AssemblyVersion("2.0.1218")]
 [assembly: AssemblyFileVersion("2.0.1218")]
+=======
+[assembly: AssemblyVersion("1.2.0731")]
+[assembly: AssemblyFileVersion("1.2.0731")]
+>>>>>>> 710ed28d91dd6f2bae8186008a9e446b1f8e94e8
 [assembly: NeutralResourcesLanguage("en-GB")]
 

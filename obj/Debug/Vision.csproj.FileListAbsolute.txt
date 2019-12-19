@@ -113,6 +113,7 @@ D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\Vision.csproj.CopyCo
 D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\Vision_UI.exe
 D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\Vision_UI.pdb
 D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\MARK.MSG.resources
+<<<<<<< HEAD
 D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\Database.mdf
 D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\Database_log.ldf
 D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\Vision_UI.pdb
@@ -140,3 +141,5 @@ D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\obj\Debug\Vis
 D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\obj\Debug\Vision_UI.exe.manifest
 D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\obj\Debug\Vision_UI.application
 D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\obj\Debug\Vision_UI.exe
+=======
+>>>>>>> 710ed28d91dd6f2bae8186008a9e446b1f8e94e8
