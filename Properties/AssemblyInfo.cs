@@ -6,13 +6,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Private Assistant Vision")]
+[assembly: AssemblyTitle("DvNET Vision")]
 [assembly: AssemblyDescription("Vision User Interface")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Dewnith Fernando")]
-[assembly: AssemblyProduct("P.A.Vision")]
+[assembly: AssemblyProduct("DvNET Vision")]
 [assembly: AssemblyCopyright("© M.P.Dewnith Fernando. All rights reserved.")]
-[assembly: AssemblyTrademark("P.A.Vision(TM)")]
+[assembly: AssemblyTrademark("DvNET Vision (TM)")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -33,7 +33,7 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.1048")]
-[assembly: AssemblyFileVersion("1.0.1048")]
+[assembly: AssemblyVersion("2.0.1218")]
+[assembly: AssemblyFileVersion("2.0.1218")]
 [assembly: NeutralResourcesLanguage("en-GB")]
 

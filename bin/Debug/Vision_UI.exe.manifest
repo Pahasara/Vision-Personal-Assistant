@@ -4,7 +4,7 @@
   <description asmv2:iconFile="app.ico" asmv2:publisher="Dewnith Fernando" asmv2:product="MARK" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Vision_UI" version="1.0.1048.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Vision_UI" version="2.0.1218.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="Vision_UI.exe" parameters="" />
   </entryPoint>
   <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
@@ -44,26 +44,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vision.Core.dll" size="5632">
-      <assemblyIdentity name="Vision.Core" version="1.0.1048.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vision.Core.dll" size="7168">
+      <assemblyIdentity name="Vision.Core" version="2.0.1218.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>zDot9+GB+arP69g4vKJcuU+7aK0aijznZNpYvgOxVCk=</dsig:DigestValue>
+        <dsig:DigestValue>VExZjAZ9ODG8IGt6wMK2m4pBjX0HGZvyS+w+0UbCfkU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vision_UI.exe" size="380920">
-      <assemblyIdentity name="Vision_UI" version="1.0.1048.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Vision_UI.exe" size="514008">
+      <assemblyIdentity name="Vision_UI" version="2.0.1218.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SqFuaEFURLYgBM3CtFyGv/KhigvSec9EmDDnE1ytr/I=</dsig:DigestValue>
+        <dsig:DigestValue>jec7qg5kBr27PVgap59r08IAr87/5N1I+oFIS7UqQIc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -109,7 +109,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>l/VPfNqUVNQIPyQECM0xWlTJm+DXcPOne6oYsApBDIo=</dsig:DigestValue>
+      <dsig:DigestValue>aGKyVzYln3v9NE5D7qEKcDiFvjge7ip0XOsSkWsBoVg=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

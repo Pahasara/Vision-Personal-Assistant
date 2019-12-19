@@ -58,3 +58,85 @@ D:\Documents\Workspaces\Visual Studio Enterprise\Project M.A.R.K\Vision\obj\Debu
 D:\Documents\Workspaces\Visual Studio Enterprise\Project M.A.R.K\Vision\obj\Debug\Vision.csproj.CopyComplete
 D:\Documents\Workspaces\Visual Studio Enterprise\Project M.A.R.K\Vision\obj\Debug\Vision_UI.exe
 D:\Documents\Workspaces\Visual Studio Enterprise\Project M.A.R.K\Vision\obj\Debug\Vision_UI.pdb
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\bin\Debug\Database.mdf
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\bin\Debug\Database_log.ldf
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\bin\Debug\Vision_UI.exe.config
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\bin\Debug\Vision_UI.exe.manifest
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\bin\Debug\Vision_UI.application
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\bin\Debug\Vision_UI.exe
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\bin\Debug\System.Data.DataSetExtensions.dll
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\bin\Debug\System.Data.dll
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\bin\Debug\System.dll
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\bin\Debug\System.Drawing.dll
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\bin\Debug\System.Speech.dll
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\bin\Debug\System.Windows.Forms.dll
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\obj\Debug\Vision.csprojAssemblyReference.cache
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\obj\Debug\MARK.About.resources
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\obj\Debug\MARK.MainUI.resources
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\obj\Debug\MARK.Properties.Resources.resources
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\obj\Debug\Vision.csproj.GenerateResource.cache
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\obj\Debug\Vision.csproj.CoreCompileInputs.cache
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\obj\Debug\Vision_UI.TrustInfo.xml
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\obj\Debug\Vision_UI.exe.manifest
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\obj\Debug\Vision_UI.application
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\obj\Debug\Vision.csproj.CopyComplete
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\obj\Debug\Vision_UI.exe
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\obj\Debug\Vision_UI.pdb
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\bin\Debug\Vision_UI.pdb
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\bin\Debug\Vision.Core.dll
+D:\DvNET\Project M.A.R.K\Vision UI\Vision\bin\Debug\Vision.Core.pdb
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\bin\Debug\Database.mdf
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\bin\Debug\Database_log.ldf
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\bin\Debug\Vision_UI.exe.config
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\bin\Debug\Vision_UI.exe.manifest
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\bin\Debug\Vision_UI.application
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\bin\Debug\Vision_UI.exe
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\bin\Debug\Vision_UI.pdb
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\bin\Debug\System.Data.DataSetExtensions.dll
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\bin\Debug\System.Data.dll
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\bin\Debug\System.dll
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\bin\Debug\System.Drawing.dll
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\bin\Debug\System.Speech.dll
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\bin\Debug\System.Windows.Forms.dll
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\bin\Debug\Vision.Core.dll
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\bin\Debug\Vision.Core.pdb
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\Vision.csprojAssemblyReference.cache
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\MARK.About.resources
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\MARK.MainUI.resources
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\MARK.Properties.Resources.resources
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\Vision.csproj.GenerateResource.cache
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\Vision.csproj.CoreCompileInputs.cache
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\Vision_UI.TrustInfo.xml
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\Vision_UI.exe.manifest
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\Vision_UI.application
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\Vision.csproj.CopyComplete
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\Vision_UI.exe
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\Vision_UI.pdb
+D:\DvNET\Project M.A.R.K\Vision UI\Vision Extreme\obj\Debug\MARK.MSG.resources
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\Database.mdf
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\Database_log.ldf
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\Vision_UI.pdb
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\System.Data.DataSetExtensions.dll
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\System.Data.dll
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\System.dll
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\System.Drawing.dll
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\System.Speech.dll
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\System.Windows.Forms.dll
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\Vision.Core.dll
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\Vision.Core.pdb
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\obj\Debug\Vision.csprojAssemblyReference.cache
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\obj\Debug\MARK.About.resources
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\obj\Debug\MARK.MainUI.resources
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\obj\Debug\MARK.MSG.resources
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\obj\Debug\MARK.Properties.Resources.resources
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\obj\Debug\Vision.csproj.GenerateResource.cache
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\obj\Debug\Vision.csproj.CopyComplete
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\obj\Debug\Vision_UI.pdb
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\Vision_UI.exe.config
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\Vision_UI.exe.manifest
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\Vision_UI.application
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\bin\Debug\Vision_UI.exe
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\obj\Debug\Vision_UI.TrustInfo.xml
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\obj\Debug\Vision_UI.exe.manifest
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\obj\Debug\Vision_UI.application
+D:\Workspaces\Visual Studio\C#.NET\Vision\Vision UI\Vision Extreme\obj\Debug\Vision_UI.exe

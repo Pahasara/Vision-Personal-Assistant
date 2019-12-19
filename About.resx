@@ -117,35 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>LICENSE TERMS
-
-
-
-
-1.ABOUT USING. Non Commercial Purpose ONLY.DON'T USE FOR COMMERCIAL PURPOSES WITHOUT PERMISSSION AUTHOR'S.
-
-2.REDISTRIBUTION. THIS SOFTWARE DON'T REDISTRIBUTE.THIS SOFTWARE REDISTRIBUTION IS PROHIBITED BY COPYRIGHT LAW.Not valid for redistribute this computer program or share copies of this computer program.
-
-3.WARRANTY. We are NOT RESPONSIBLE THIS SOFTWARE.This program source code not included malicious code.
-
-4.LEGAL EFFECT. This agreement describes certain legal rights. You may have other rights under the laws of your state or country.
-
-5 .CLOSED SOURCE. This computer program is a COPYRIGHT of AUTHOR'S and SOURCE CODE IS CLOSED.So you can't study, copy, use and get SORCE CODE of this.
-
-© 2019 Dewnith Fernando. 
-**********************************************************************************
-March 2019</value>
-  </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
