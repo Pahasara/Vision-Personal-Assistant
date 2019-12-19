@@ -27,12 +27,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MSG));
             this.title = new System.Windows.Forms.Label();
             this.message = new System.Windows.Forms.Label();
             this.OkBtn = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +51,7 @@
             // 
             this.message.BackColor = System.Drawing.Color.Transparent;
             this.message.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.message.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            this.message.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.message.Location = new System.Drawing.Point(22, 32);
             this.message.Name = "message";
             this.message.Size = new System.Drawing.Size(338, 75);
@@ -63,10 +61,10 @@
             // 
             // OkBtn
             // 
-            this.OkBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(185)))), ((int)(((byte)(158)))));
+            this.OkBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(185)))), ((int)(((byte)(128)))));
             this.OkBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(225)))), ((int)(((byte)(158)))));
-            this.OkBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(168)))));
-            this.OkBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(238)))), ((int)(((byte)(148)))));
+            this.OkBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(180)))), ((int)(((byte)(148)))));
+            this.OkBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(238)))), ((int)(((byte)(138)))));
             this.OkBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OkBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OkBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
@@ -78,26 +76,22 @@
             this.OkBtn.UseVisualStyleBackColor = false;
             this.OkBtn.Click += new System.EventHandler(this.OkBtn_Click);
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.panel1.Controls.Add(this.OkBtn);
             this.panel1.Controls.Add(this.title);
             this.panel1.Controls.Add(this.message);
-            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(386, 152);
+            this.panel1.Size = new System.Drawing.Size(388, 154);
             this.panel1.TabIndex = 7;
             // 
             // MSG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(168)))), ((int)(((byte)(178)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(34)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(390, 156);
             this.Controls.Add(this.panel1);
@@ -106,7 +100,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MSG";
-            this.Opacity = 0D;
+            this.Opacity = 0.75D;
             this.Padding = new System.Windows.Forms.Padding(9);
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
@@ -124,7 +118,6 @@
         private System.Windows.Forms.Label title;
         private System.Windows.Forms.Label message;
         private System.Windows.Forms.Button OkBtn;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel1;
     }
 }

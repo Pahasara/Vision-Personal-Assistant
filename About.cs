@@ -47,11 +47,7 @@ namespace MARK
 
         private void About_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             label15.Text = "Copyright © " + "2018 - " + MK_MAIN.getYear() + " Dewnith Fernando. All rights reserved.";
-=======
-            label15.Text = "Copyright © " + "2018" + MK_MAIN.getYear() + " Dewnith Fernando. All rights reserved.";
->>>>>>> 9708d9e426d13b89771fcdde0db830cf04a74a4d
         }
     }
 }

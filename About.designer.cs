@@ -52,18 +52,18 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(40)))));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(56)))));
-            this.label2.Location = new System.Drawing.Point(-5, -16);
+            this.label2.Location = new System.Drawing.Point(-5, -17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(527, 19);
             this.label2.TabIndex = 1;
             // 
             // label4
             // 
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(40)))));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(56)))));
-            this.label4.Location = new System.Drawing.Point(456, 2);
+            this.label4.Location = new System.Drawing.Point(458, 2);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(10, 351);
             this.label4.TabIndex = 3;
@@ -96,11 +96,11 @@
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(154)))), ((int)(((byte)(190)))));
-            this.label10.Location = new System.Drawing.Point(28, 8);
+            this.label10.Location = new System.Drawing.Point(28, 4);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(390, 21);
             this.label10.TabIndex = 13;
-            this.label10.Text = "Private Assistant Vision Extreme Edition";
+            this.label10.Text = "DvNET VISION";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label11
@@ -124,27 +124,23 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(370, 19);
             this.label15.TabIndex = 18;
-<<<<<<< HEAD
-            this.label15.Text = "* Copyright © 2018 - 2019 Dewnith Fernando. All rights reserved.";
-=======
-            this.label15.Text = "* Copyrights © 2018 - 2019 Dewnith Fernando. All rights reserved.";
->>>>>>> 9708d9e426d13b89771fcdde0db830cf04a74a4d
+            this.label15.Text = "* Copyright © 2018 Dewnith Fernando. All rights reserved.";
             this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(40)))));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(56)))));
-            this.label1.Location = new System.Drawing.Point(-2, 349);
+            this.label1.Location = new System.Drawing.Point(-2, 350);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(524, 10);
             this.label1.TabIndex = 19;
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(40)))));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(56)))));
-            this.label3.Location = new System.Drawing.Point(-8, -1);
+            this.label3.Location = new System.Drawing.Point(-10, -1);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(12, 354);
             this.label3.TabIndex = 20;
@@ -154,7 +150,7 @@
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(78)))));
-            this.label8.Location = new System.Drawing.Point(33, 14);
+            this.label8.Location = new System.Drawing.Point(33, 11);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(381, 24);
             this.label8.TabIndex = 21;
@@ -164,22 +160,22 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
-            this.label9.Location = new System.Drawing.Point(94, 96);
+            this.label9.Location = new System.Drawing.Point(96, 97);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(263, 28);
+            this.label9.Size = new System.Drawing.Size(242, 21);
             this.label9.TabIndex = 22;
             this.label9.Text = "M.Pahasara Dewnith Fernando.";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label12.Location = new System.Drawing.Point(172, 80);
+            this.label12.Location = new System.Drawing.Point(167, 78);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(101, 19);
+            this.label12.Size = new System.Drawing.Size(116, 21);
             this.label12.TabIndex = 23;
             this.label12.Text = "Developed by";
             // 
@@ -222,22 +218,22 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label16.Location = new System.Drawing.Point(172, 133);
+            this.label16.Location = new System.Drawing.Point(171, 134);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(86, 19);
+            this.label16.Size = new System.Drawing.Size(100, 21);
             this.label16.TabIndex = 28;
             this.label16.Text = "Powered by";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
-            this.label17.Location = new System.Drawing.Point(108, 149);
+            this.label17.Location = new System.Drawing.Point(113, 155);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(227, 28);
+            this.label17.Size = new System.Drawing.Size(204, 21);
             this.label17.TabIndex = 27;
             this.label17.Text = "Microsoft .NET Framework";
             // 
@@ -311,6 +307,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "About";
+            this.Opacity = 0.7D;
             this.Padding = new System.Windows.Forms.Padding(9);
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
